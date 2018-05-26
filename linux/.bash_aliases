@@ -3,10 +3,8 @@ alias lsd='ls -ald */'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias lsd='ls -al | grep ^d'
 
-function lsd(){
-  ls -ald "$1/*/"
-}
 function exzip ()
 {
   if [ -f "$1" ] ; then
